@@ -4,20 +4,44 @@
 
 <head>
 	<title>Portfolio</title>
+	<style>
+		body {
+			background-color: black;
+			color: white; }
+			
+		#profile-pic {
+			border: 7px dotted;
+			border-radius: 50%;
+			margin: 40px 20px 20px 40px;
+			border-color: white; }
+		
+		#header {
+			background-color: gray;
+			width: 100%;
+			border: 5px;
+			padding: 20px;
+			border-spacing: 20px;
+			font-size: 50px; }
+			
+		#table-result, th {
+			border: 1px solid;
+	</style>
 </head>
 
-<body bgcolor="gray" style="color:white">
-
-	<table border=2 bgcolor="black" style="width:100%" cellspacing="3"  cellpadding="3">
-		<tr><th align="center" style="font-size:50px" bgcolor="gray"><b>PORTFOLIO</b></th></tr>
+<body>
+		<h1 align="center" width="100%" colspan="2"><b>PORTFOLIO</b></h1>
 		
-		<tr><td><h1 align="center" style="font-size:100px">Shanelka Pramuditha</h1>
 		
-		<img src="pictures/profile-picture.jpg" alt="Profile Picture" style="border-radius:50%; display:block; margin-left:auto; margin-right:auto; border-style:dotted; border-color:red; border-width:7px" width="400" height="400">
+		<table>
+		<tr>
+			<td><img id="profile-pic" src="pictures/profile-picture.jpg" alt="Profile Picture" width="400" height="400"></td>
+			<td><h1 align="center" style="font-size:100px" align="right">Shanelka Pramuditha</h1></td>
+		</tr></table>
 		
-		<border style="display:block; margin-left:auto; margin-right:auto; border-style:dotted; border-color:red; border-radius:50%; border-width:7px; padding:50px 50px 50px 50px"><h3 align="center">Full Name: Warapitiya Gamage Shanelka Pramuditha</br>
-		Mobile Number:<a href="tel:0771230577" style="color:white"/> 0771230577</a></br>
-		E-Mail:<a href="mailto:55pramuditha@gmail.com" style="color:white"> 55pramuditha@gmail.com</a></h3></br></border>
+			<h3>Name: Shanelka Pramuditha</br>
+			Mobile Number:<a href="tel:0771230577" style="color:white"/> 0771230577</a></br>
+			E-Mail:<a href="mailto:55pramuditha@gmail.com" style="color:white"> 55pramuditha@gmail.com</a></h3></br>
+		
 	
 
 		<h1>Personal Information</h1>
@@ -31,7 +55,7 @@
 
 		<h1>Advanced Level Results</h1>
 		
-		<table border=1 cellspacing="2"  cellpadding="2">
+		<table id="table-result">
 			<tr>
 				<th>Subject</th>
 				<th>Grade</th>
@@ -57,11 +81,12 @@
 		<h1>Skills</h1>
 		
 		<ul type="square">
-			<p><li>MS Office</li>
-			<li>Web Designing</li>
-			<li>Programming</li></p>
-		</ul></td>
-	</table>
+			<p>
+				<li>MS Office</li>
+				<li>Web Designing</li>
+				<li>Programming</li>
+			</p>
+		</ul>	
 </body>
 
 </html>
